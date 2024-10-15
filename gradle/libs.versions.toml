@@ -14,6 +14,7 @@ rxjava-kotlin = "2.4.0"
 rxjava-android = "2.1.1"
 retrofit = "2.9.0"
 okhttp3 = "4.12.0"
+adapter-delegates = "4.3.2"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -33,6 +34,10 @@ retrofit-core = {group = "com.squareup.retrofit2", name = "retrofit", version.re
 retrofit-gson = {group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit"}
 retrofit-converter-rxjava = {group = "com.squareup.retrofit2", name = "adapter-rxjava2", version.ref = "retrofit"}
 okhttp3-logging = {group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp3"}
+
+adapter-delegates-core = {group = "com.hannesdorfmann", name = "adapterdelegates4-kotlin-dsl", version.ref = "adapter-delegates"}
+adapter-delegates-viewbinding = {group = "com.hannesdorfmann" , name = "adapterdelegates4-kotlin-dsl-viewbinding", version.ref = "adapter-delegates"}
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

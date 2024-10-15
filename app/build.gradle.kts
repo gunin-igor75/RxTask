@@ -33,6 +33,10 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -51,6 +55,11 @@ dependencies {
     implementation(libs.retrofit.core)
     implementation(libs.retrofit.gson)
     implementation(libs.retrofit.converter.rxjava)
+
+    //adapterDelegates
+    implementation(libs.adapter.delegates.core)
+    implementation(libs.adapter.delegates.viewbinding)
+
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
